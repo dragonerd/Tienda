@@ -1,0 +1,56 @@
+/* ================= GENERAL SETTINGS ======================= */
+
+@font-face {
+    font-family: DancingScript-Regular;
+    src: url("/static/DancingScript-Regular.ttf");
+}
+
+/* ================= KEYFRAMES EFFECTS ======================= */
+
+@keyframes aparecer {
+    0% { opacity: 0; } /* Keyframe inicial (0%) */
+    100% { opacity: 1.2; } /* Keyframe final (100%) */
+  }
+
+
+
+body{
+    background-color: #FF5B7A;
+}
+
+ul{
+    font-family: DancingScript-Regular;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+li{
+    display: inline;
+    float: right;
+    padding: 10px;
+   
+}
+
+li a:hover {
+    background-color: #ffadad;
+    color: rgb(0, 0, 0);
+    animation: aparecer 0.9s ease-in-out; /* Animación */
+    padding: 10px;
+
+  }
+.boton
+{
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor:pointer;
+    border-color: white;
+    text-decoration: none;
+    box-shadow: none;
+    color: black; 
+    font-size: 20px;
+}
