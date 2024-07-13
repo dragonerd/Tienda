@@ -8,43 +8,36 @@
 /* ================= KEYFRAMES EFFECTS ======================= */
 
 @keyframes aparecer {
-    0% { opacity: 0; } /* Keyframe inicial (0%) */
+    0% { opacity: 0.1; } /* Keyframe inicial (0%) */
     100% { opacity: 1.2; } /* Keyframe final (100%) */
   }
 
 
 
 body{
-    background-color: #FF5B7A;
+    background-color: #ffb0bf;
 }
 
 ul{
     font-family: DancingScript-Regular;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 50px;
-    overflow: hidden;
+
 }
 
 li{
     display: inline;
-    float: right;
-    padding: 10px;
-   
+  
 }
 
 li a:hover {
-    background-color: #ffadad;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     animation: aparecer 0.9s ease-in-out; /* Animación */
-    padding: 10px;
 
   }
 .boton
 {
     border: none;
-    border-radius: 15px;
     padding: 10px;
     margin: 10px;
     cursor:pointer;
@@ -52,5 +45,46 @@ li a:hover {
     text-decoration: none;
     box-shadow: none;
     color: black; 
-    font-size: 20px;
+    font-size: 40px;
+    border-radius: 30px;
 }
+
+.logo
+{
+display: grid;
+place-items: center;
+max-width: 100%;
+  height: auto;
+}
+
+
+.MainMenu
+{
+display: grid;
+place-items: center;
+}
+
+@media (max-width: 600px) {
+    .MainMenu {
+    
+        };
+
+    ul
+        {
+         
+        };
+
+    li
+    {
+        padding: 80px;
+    }
+
+    
+
+    .logo
+    {
+        display: grid;
+        place-items: center;
+    }
+    }
+  
